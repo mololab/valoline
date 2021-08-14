@@ -28,3 +28,12 @@ body {
     color: white;
     font-size: 2em;
 }
+
+.footer {
+    font-family: "VALORANT", sans-serif;
+    color: white;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    font-size: 1em;
+}
