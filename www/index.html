@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="button_style.css" />
+    <link rel="stylesheet" href="general_style.css" />
+
+    <link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet" />
+
+    <script>
+      function onStartAck(epoch) {
+        alert(
+          "received acknowledgment from the server~ [onStart event] => " + epoch
+        );
+      }
+    </script>
+  </head>
+
+  <body onload="onStart((new Date()).toString())">
+    <!-- <div class="content">
+      <img
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Fviper-cool-valorant-fanart_bGhoa2WUmZqaraWkpJRmaGtrrWxrbQ.jpg&f=1&nofb=1"
+        alt="valorant-photo"
+        class="background-photo"
+      />
+    </div> -->
+
+    <div class="container">
+      <div class="title-container">
+        <span class="title">Change status</span>
+      </div>
+
+      <div>
+        <div>
+          <button class="btn btn--light">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Offline mode</span>
+            </span>
+          </button>
+        </div>
+        <div>
+          <button class="btn">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Online mode</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
