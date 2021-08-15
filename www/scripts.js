@@ -3,7 +3,8 @@ function onStartAck(epoch) {
 }
 
 function changeStatus(status) {
-  alert("status:" + status);
+  document.getElementById("loading").style.opacity = "1";
+  // alert("status:" + status);
 }
 
 function goBack() {
