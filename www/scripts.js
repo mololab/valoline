@@ -5,3 +5,7 @@ function onStartAck(epoch) {
 function changeStatus(status) {
   alert("status:" + status);
 }
+
+function goBack() {
+  window.history.back();
+}

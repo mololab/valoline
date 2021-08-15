@@ -1,0 +1,47 @@
+body {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Fviper-cool-valorant-fanart_bGhoa2WUmZqaraWkpJRmaGtrrWxrbQ.jpg&f=1&nofb=1");
+}
+
+.container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 40%;
+    transform: translate(10%, -50%);
+}
+
+.title-container {
+    margin-bottom: 20%;
+}
+
+.title {
+    font-family: "VALORANT", sans-serif;
+    color: white;
+    font-size: 2em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+
+    font-family: "VALORANT", sans-serif;
+    color: white;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    font-size: 0.9em;
+}
+
+.footer-link {
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-item:hover {
+    color: #ff4655;
+}
