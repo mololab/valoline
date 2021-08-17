@@ -31,7 +31,9 @@ func main() {
 	core.HandleError(err)
 
 	// MODE CHANGER BIND
-	err = ui.Bind("onModeChange", core.OnModeChange)
+	err = ui.Bind("onModeChange", func(mode string) {
+		core.OnModeChange(mode, &ui)
+	})
 	core.HandleError(err)
 
 	// connect to FS (fileServer pointing to folder www)
