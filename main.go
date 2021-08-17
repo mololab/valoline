@@ -7,8 +7,8 @@ import (
 	"os"
 	"os/signal"
 	"runtime"
-	"time"
 
+	"github.com/parvineyvazov/valoline/core"
 	"github.com/zserge/lorca"
 )
 
@@ -21,17 +21,18 @@ func main() {
 	genericErrHandler(err, "initializing the app UI")
 	defer ui.Close()
 
+	// ON START BIND
 	err = ui.Bind("onStart", func(dateInString string) {
 		// perform the server side task here
 		fmt.Println("app started", dateInString)
 
-		ui.Eval(fmt.Sprintf(`onStartAck(%v);`, time.Now().UnixNano()))
+		// ui.Eval(fmt.Sprintf(`onStartAck(%v);`, time.Now().UnixNano()))
 	})
+	core.HandleError(err)
 
-	if err != nil {
-		// or any exception handling code here
-		panic(err)
-	}
+	// MODE CHANGER BIND
+	err = ui.Bind("onModeChange", core.OnModeChange)
+	core.HandleError(err)
 
 	// connect to FS (fileServer pointing to folder www)
 	listener, err := net.Listen("tcp", "127.0.0.1:0")

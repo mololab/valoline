@@ -1,4 +1,4 @@
-module github.com/ParvinEyvazov/go-projects/lorca-examples/noteapp
+module github.com/parvineyvazov/valoline
 
 go 1.16
 

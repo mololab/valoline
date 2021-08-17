@@ -2,9 +2,19 @@ function onStartAck(epoch) {
   alert("received acknowledgment from the server~ [onStart event] => " + epoch);
 }
 
-function changeStatus(status) {
+async function changeStatus(status) {
   document.getElementById("loading").style.opacity = "1";
 
+  await onModeChange(status);
+
+  // setTimeout(() => {
+  //   document.getElementById("loading").style.opacity = "0";
+  // }, 2000);
+
+  // alert("status:" + status);
+}
+
+function onSuccess() {
   setTimeout(() => {
     document.getElementById("loading").style.opacity = "0";
 
@@ -19,6 +29,12 @@ function changeStatus(status) {
         style: {},
       })
       .success("Success " + status);
+  }, 1500);
+}
+
+function onError() {
+  setTimeout(() => {
+    document.getElementById("loading").style.opacity = "0";
 
     siiimpleToast
       .setOptions({
@@ -31,9 +47,7 @@ function changeStatus(status) {
         style: {},
       })
       .alert("Error happened " + status);
-  }, 2 * 1000);
-
-  // alert("status:" + status);
+  }, 1500);
 }
 
 function goBack() {
