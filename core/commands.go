@@ -45,7 +45,7 @@ func beOnline(ui *lorca.UI) {
 	}
 
 	fmt.Println("call online")
-	isError(ui)
+	isSuccess(ui)
 }
 
 func isSuccess(ui *lorca.UI) {
