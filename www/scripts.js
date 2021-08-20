@@ -51,5 +51,5 @@ function onError() {
 }
 
 function goBack() {
-  window.history.back();
+  location.href = "../index.html";
 }
