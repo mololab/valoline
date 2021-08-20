@@ -1,3 +1,6 @@
+let download_link =
+  "https://github.com/ParvinEyvazov/valoline/raw/master/Valoline.exe";
+
 function onStartAck(epoch) {
   alert("received acknowledgment from the server~ [onStart event] => " + epoch);
 }
@@ -52,4 +55,23 @@ function onError() {
 
 function goBack() {
   location.href = "../index.html";
+}
+
+function copyDownloadLink() {
+  copyMessage(download_link);
+}
+
+function copyMessage(string) {
+  const selBox = document.createElement("textarea");
+  selBox.style.position = "fixed";
+  selBox.style.left = "0";
+  selBox.style.top = "0";
+  selBox.style.opacity = "0";
+  selBox.value = string;
+  document.body.appendChild(selBox);
+  selBox.focus();
+  selBox.select();
+  document.execCommand("copy");
+  document.body.removeChild(selBox);
+  this.copyMessageGuarantee(string);
 }
