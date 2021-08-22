@@ -27,7 +27,7 @@ As you know, changing the status as Offline in Valorant game is not possible fro
 
 ## Is there any BAN risk?
 
-NO, definitely there is not any ban or limitation risk. Game files are not chaning.
+NO, definitely there is not any ban or limitation risk. Game files are not changing.
 
 <br>
 
