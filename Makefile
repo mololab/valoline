@@ -1,10 +1,9 @@
 run:
 	go run generateAssets.go
 	mv generateAssets.go generateAssets.go.disable
-	# go build -o Valoline.exe
+	go generate
 	GOOS="windows" GOARCH="386" go build -o Valoline.exe
 	mv generateAssets.go.disable generateAssets.go
-	./Valoline
 
 git:
 	git add .
@@ -14,6 +13,6 @@ git:
 prod:
 	go run generateAssets.go
 	mv generateAssets.go generateAssets.go.disable
+	go generate
 	GOOS="windows" GOARCH="386" go build -o Valoline.exe -ldflags -H=windowsgui
 	mv generateAssets.go.disable generateAssets.go
-	./Valoline

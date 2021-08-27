@@ -12,6 +12,8 @@ import (
 	"github.com/zserge/lorca"
 )
 
+//go:generate goversioninfo -icon=www/assets/favicon.ico -manifest=Valoline.exe.manifest
+
 func main() {
 	args := []string{}
 	prepareArgsForLorcaBootstrap(args)
