@@ -12,7 +12,7 @@ import (
 	"github.com/zserge/lorca"
 )
 
-//go:generate goversioninfo -icon=www/assets/favicon.ico -manifest=Valoline.exe.manifest
+//go:generate goversioninfo -icon=www/assets/desktop_favicon.ico -manifest=Valoline.exe.manifest
 
 func main() {
 	args := []string{}
