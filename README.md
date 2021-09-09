@@ -1,4 +1,4 @@
-# <p align="center"> **Valoline** <img src="www/assets/favicon.ico"> </p>
+# <p align="center"> **🎮 Valoline** <img src="www/assets/favicon.ico"> </p>
 
 As you know, changing the status as Offline in Valorant game is not possible from the inside of the game. **Valoline** <img src="www/assets/favicon.ico"> helps you to be Offline in the game without any ban or other problems.
 **Valoline** <img src="www/assets/favicon.ico"> is a desktop app and is only available for Windows OS.
