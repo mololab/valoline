@@ -1,4 +1,4 @@
-# <p align="center"> **Valoline** <img src="www/assets/favicon.ico"> </p>
+# <p align="center"> **🎮 Valoline** <img src="www/assets/favicon.ico"> </p>
 
 <p align="center" href="" > <img align="center" width = "25" height="" src="www/assets/youtube.ico"> <a href="https://youtu.be/3ry9Ferw-ks"> Video link</a> </p>
 
