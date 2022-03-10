@@ -36,3 +36,11 @@ NO, definitely there is not any ban or limitation risk. Game files are not chang
 ## Is Valoline trustable?
 
 Valoline is an Open Source application, then you can read and contribute the source code <a class="link" href="https://github.com/ParvinEyvazov/valoline" target=”_blank”>from here</a>.
+
+<br>
+
+## FAQ
+
+1 - Why does Valoline need admin privileges?
+
+Valoline uses _`netsh`_. _`Netsh`_ is a command-line scripting tool that allows modifying the network configuration of a computer. _`Netsh`_ needs admin privileges to run specific scripts.
