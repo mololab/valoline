@@ -1,5 +1,11 @@
 # <p align="center"> **🎮 Valoline** <img src="www/assets/favicon.ico"> </p>
 
+<p align="center">
+<a href="https://youtu.be/3ry9Ferw-ks">
+    <img src="https://img.shields.io/youtube/views/3ry9Ferw-ks?label=Youtube%20views&style=social" alt="youtube views">
+  </a> 
+</p>
+
 <p align="center" href="" > <img align="center" width = "25" height="" src="www/assets/youtube.ico"> <a href="https://youtu.be/3ry9Ferw-ks"> Video link</a> </p>
 
 As you know, changing the status as Offline in Valorant game is not possible from the inside of the game. **Valoline** <img src="www/assets/favicon.ico"> helps you to be Offline in the game without any ban or other problems.
