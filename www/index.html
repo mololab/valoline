@@ -1,1 +1,63 @@
-<html> <head> <title>VALOLINE</title> <link rel="stylesheet" href="style/button_style.css" /> <link rel="stylesheet" href="style/general.css" /> <link rel="stylesheet" href="style/landing.css" /> <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> <link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet" /> <script src="scripts.js" defer></script> <!-- toast --> <link rel="stylesheet" href="./components/toast/style.css" /> <script src="./components/toast/simple.js"></script> <script src="./components/toast/main.js"></script> </head> <body onload="onStart((new Date()).toString())"> <div class="container"> <div class="title-container"> <span class="title">VALOLINE</span> </div> <div> <div> <button class="btn btn--light" onclick="changeStatus(`offline`)"> <span class="btn__inner"> <span class="btn__slide"></span> <span class="btn__content">Offline mode</span> </span> </button> </div> <div> <button class="btn" onclick="changeStatus(`online`)"> <span class="btn__inner"> <span class="btn__slide"></span> <span class="btn__content">Online mode</span> </span> </button> </div> </div> <div class="lds-ellipsis" id="loading" style="opacity: 0"> <div></div> <div></div> <div></div> <div></div> </div> </div> <div class="footer"> <a class="footer-link" href="./pages/help.html"> <div> <span class="footer-item"> Help </span> </div> </a> <a class="footer-link" href="./pages/about-us.html"> <div> <span class="footer-item"> About us </span> </div> </a> </div> </body> </html> 
+<html>
+  <head>
+    <title>VALOLINE</title>
+    <link rel="stylesheet" href="style/button_style.css" />
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/landing.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet" />
+    <script src="scripts.js" defer></script>
+
+    <!-- toast -->
+    <link rel="stylesheet" href="./components/toast/style.css" />
+    <script src="./components/toast/simple.js"></script>
+    <script src="./components/toast/main.js"></script>
+  </head>
+
+  <body onload="onStart((new Date()).toString())">
+    <div class="container">
+      <div class="title-container">
+        <span class="title">VALOLINE</span>
+      </div>
+
+      <div>
+        <div>
+          <button class="btn btn--light" onclick="changeStatus(`offline`)">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Offline mode</span>
+            </span>
+          </button>
+        </div>
+        <div>
+          <button class="btn" onclick="changeStatus(`online`)">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Online mode</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="lds-ellipsis" id="loading" style="opacity: 0">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a class="footer-link" href="./pages/help.html">
+        <div>
+          <span class="footer-item"> Help </span>
+        </div>
+      </a>
+      <a class="footer-link" href="./pages/about-us.html">
+        <div>
+          <span class="footer-item"> About us </span>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>

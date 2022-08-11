@@ -1,1 +1,17 @@
-body { min-height: 90vh; background-color: #0f1923; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; } .link { color: rgb(0, 195, 255); cursor: pointer; } .link:active { color: rgb(255, 255, 255); } 
+body {
+    min-height: 90vh;
+    background-color: #0f1923;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.link {
+    color: rgb(0, 195, 255);
+    cursor: pointer;
+}
+
+.link:active {
+    color: rgb(255, 255, 255);
+}
